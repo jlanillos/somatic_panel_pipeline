@@ -1,0 +1,1 @@
+Sample_sampleID__User_DNA_Seq/sampleID__User_DNA_Seq_S19_L001_R1_001.fastq.gz

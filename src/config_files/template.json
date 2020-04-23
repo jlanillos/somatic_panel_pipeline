@@ -1,0 +1,59 @@
+  {
+  "analysis":{
+        "sample_id": "",
+      "analysis_type": "single",
+      "analysis_dir": "/home/jlanillos/Disco4tb/Projects/MariaGarcia/results/",
+      "script": "scripts/",
+      "log":  "logs/",
+      "result": "",
+      "gatk4": "/home/jlanillos/Disco4tb/usr/gatk-4.0.5.1/gatk-package-4.0.5.1-local.jar"
+  },
+  "path": {
+      "genomefa": "/home/jlanillos/Disco4tb/refGen/",
+      "fastq": "",
+      "panel": "/home/jlanillos/Disco4tb/Projects/MariaGarcia/BED_files/",
+      "vep": "/home/jlanillos/Disco4tb/usr/ensembl-vep/",
+      "code":"/home/jlanillos/Disco4tb/Projects/MariaGarcia/src/workflows/"
+  },
+  "references": {
+      "genomefa": "GATK_hg38_resources/resources_broad_hg38_v0_Homo_sapiens_assembly38.fasta",
+      "genomefa37": "GRCh37_75/Homo_sapiens.GRCh37.75.dna.toplevel.fa",
+      "dbsnp": "db_1000_indels_snvs/dbsnp_138.b37.vcf",
+      "dbsnpALL": "db_1000_indels_snvs/00-All.vcf",
+      "dbindels": "db_1000_indels_snvs/1000G_phase1.indels.b37.vcf",
+      "1000G": "db_1000_indels_snvs/1000G_phase1.snps.high_confidence.b37.vcf",
+      "cosmic": "db_1000_indels_snvs/CosmicCodingMuts.vcf",
+      "gnomAD_b37_af_only": "gatk_bundle/Mutect2/af-only-gnomad.raw.sites.b37.vcf.gz",
+      "genomefa_GATK": "GATK_hg38_resources/resources_broad_hg38_v0_Homo_sapiens_assembly38.fasta",
+      "genomefa_GATK37": "GATK_g1k_v37/human_g1k_v37.fasta",
+      "germline": "db_1000_indels_snvs/gnomad.exomes.r2.0.2.sites.vcf",
+      "vep_cache_refseq": "/home/jlanillos/.vep/homo_sapiens/94_GRCh38/",
+      "vep_cache_refseq37": "/home/jlanillos/.vep/homo_sapiens_refseq/92_GRCh37/"
+
+  },
+  "samples": {
+      "": {
+          "file_prefix": "",
+          "type": "tumor",
+          "readpair_suffix": ["1", "2"]
+      }
+ },
+  "bed":{
+      "variant_panel": "20190319_FINAL_capture_targets.padding100.bed",
+      "variant_panel_nopad": "20190319_FINAL_capture_targets.bed"
+  },
+  "QC": {
+      "adapter": "AATGATACGGCGACCACCGAGATCTACACTCTTTCCCTACACGACGCTCTTCCGATCT",
+      "min_seq_length": "25"
+  },
+  "vcf": {
+      "mutect": {
+        "default": "mutect.vcf",
+        "merged": "mutect.vcf.gz",
+        "type": "SNV"
+      }
+  },
+  "condaenv": {
+      "python36": "py36"
+  }
+}
